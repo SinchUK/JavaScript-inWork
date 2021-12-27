@@ -27,14 +27,14 @@
               <div class="logo_img">
                 <img src="assets/img/header/logo.png" alt="#">
               </div>
-              <p>Встановлення склопакетів на балкони та лоджиї в Києві</p>
+              <p>Остекление балконов и лоджий в Москве и Московской области</p>
             </div>
           </div>
 
           <div class="col-md-2 col-sm-3 col-xs-12">
            <div class="header_btn_wrap">
              <div class="header_btn_wrap_block">
-               <button data-modal="popup-engineer" class="header_btn text-uppercase text-left popup_engineer_btn">
+               <button class="header_btn text-uppercase text-left popup_engineer_btn">
                    Вызвать <br>замерщика
                </button>
              </div>
@@ -54,7 +54,7 @@
             <div class="contact_us">
               <div class="contact_us_wrap">
                 <a href="#"><img src="assets/img/header/phone.png" alt="#">+7 (495) 646-61-71</a>
-                <a class="phone_link" data-modal = 'popup' href="#">Заказать обратный звонок</a>
+                <a class="phone_link" href="#">Заказать обратный звонок</a>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@
         </div>
 
         <!-- Tree -->
-        <div class="row tree glazing_content">
+        <div class="row tree glazing_content faded">
 
           <div class="col-md-6 no-padding">
            <div class="glazing_cold">
@@ -194,7 +194,7 @@
         </div> <!-- /Tree -->
 
         <!-- Aluminum -->
-        <div class="row aluminum glazing_content">
+        <div class="row aluminum glazing_content faded">
 
           <div class="col-md-6 no-padding">
            <div class="glazing_cold">
@@ -233,7 +233,7 @@
         </div> <!-- /Aluminum -->
 
         <!-- Plastic -->
-        <div class="row plastic glazing_content">
+        <div class="row plastic glazing_content faded">
 
           <div class="col-md-6 col-md-offset-3 no-padding">
             <div class="glazing_warm">
@@ -255,7 +255,7 @@
         </div> <!-- /Plastic -->
 
         <!-- French -->
-        <div class="row french glazing_content">
+        <div class="row french glazing_content faded">
 
           <div class="col-md-6 no-padding">
            <div class="glazing_cold">
@@ -294,7 +294,7 @@
         </div> <!-- /French -->
 
         <!-- Rise -->
-        <div class="row rise glazing_content">
+        <div class="row rise glazing_content faded">
 
           <div class="col-md-6 no-padding">
            <div class="glazing_cold">
@@ -770,7 +770,7 @@
       <div class="container">
         <div class="feedback_block text-center">
           <h3>Остались вопросы?</h3>
-          <a class="phone_link" data-modal="popup" href="#">Спросите у нашего специалиста!</a>
+          <a class="phone_link" href="#">Спросите у нашего специалиста!</a>
         </div>
       </div>
     </section>
@@ -800,7 +800,7 @@
 
     <!-- Modals -->
     <!-- Request a call -->
-    <div class="popup">
+    <div class="popup" data-modal>
         <div class="popup_dialog">
             <div class="popup_content text-center">
                 <button type="button" class="popup_close"><strong>&times;</strong></button>
@@ -818,7 +818,7 @@
     </div>
 
     <!-- Request an engineer -->
-    <div class="popup_engineer">
+    <div class="popup_engineer" data-modal>
         <div class="popup_dialog">
             <div class="popup_content text-center">
                 <button type="button" class="popup_close"><strong>&times;</strong></button>
@@ -836,7 +836,7 @@
     </div>
 
     <!-- Calculator -->
-   <div class="popup_calc">
+   <div class="popup_calc" data-modal>
         <div class="popup_dialog">
             <div class="popup_calc_content text-center">
                 <button type="button" class="popup_calc_close"><strong>&times;</strong></button>
@@ -868,7 +868,7 @@
         </div>
     </div> 
 
-   <div class="popup_calc_profile">
+   <div class="popup_calc_profile" data-modal>
         <div class="popup_dialog">
             <div class="popup_calc_profile_content text-center">
                 <button type="button" class="popup_calc_profile_close"><strong>&times;</strong></button>
@@ -899,12 +899,12 @@
         </div>
     </div> 
 
-    <div class="popup_calc_end">
+    <div class="popup_calc_end" data-modal>
         <div class="popup_dialog">
             <div class="popup_content text-center">
                 <button type="button" class="popup_calc_end_close"><strong>&times;</strong></button>
                 <div class="popup_form">
-                    <form class="form" action="#">
+                    <form class="form" action="#" data-calc="end">
                       <h2>Спасибо за обращение! <br>Оставьте свои данные</h2>
                         <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
                         <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
@@ -915,12 +915,6 @@
             </div>
         </div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Add slick.js -->
-    <script src="assets/slick/slick.min.js"></script>
-    <!-- Initialize modal, sliders -->
-    <script src="/script.js"></script>
-
+    <script src="script.js"></script>
   </body>
 </html>
